@@ -1,0 +1,246 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+    margin-top: 50px;
+    margin-bottom: 130px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 100px;
+ }
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+body{
+	font-family: Arial;
+    padding: 10px;
+    background: white;
+}
+
+
+
+#loader{
+	height: 1500px;
+	width: 1500px;
+	background-color:white;
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index:999;
+	transition: all.5s;
+
+}
+#loader img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size:20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16.4em;
+
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #DC5236;
+    color: #303030;
+
+}
+
+
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
+
+.column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    width: 33.33%;
+    padding: 10px;
+    height: 550px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    
+}
+
+
+
+
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 90px;
+}
+
+.column1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 550px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
